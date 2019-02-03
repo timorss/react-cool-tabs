@@ -36,7 +36,7 @@ render() {
 	rightContentStyle={{ background:  'lightblue' }}
 	leftTabTitle={'Left title'}
 	rightTabTitle={'Right title'}
-	leftContent={<Content1>}
+	leftContent={<Content1/>}
 	rightContent={<Content2/>}
 	contentTransitionStyle={'transform 0.6s ease-in'}
 	borderTransitionStyle={'all 0.6s ease-in'}/>
