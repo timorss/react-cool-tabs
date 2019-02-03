@@ -1,6 +1,8 @@
 # react-cool-tabs
 
-Very comftable package to use tabs.
+Very comfortable package to use tabs.
+
+![](basicGif.gif)
 
 ## Installation
 
