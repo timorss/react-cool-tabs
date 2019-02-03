@@ -2,6 +2,8 @@
 
 Very comftable package to use tabs.
 
+![](basicGif.gif)
+
 ## Installation
 
  Install react-common-admin
