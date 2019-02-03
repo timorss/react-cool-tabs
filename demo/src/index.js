@@ -2,11 +2,31 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 
 import CoolTabs from '../../src'
+const style = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  paddingTop: 15,
+  fontSize: 24
+}
+class Content1 extends Component {
+  render() {
+    return <div style={style}>
+      this is Content1
+    </div>
+  }
+}
+class Content2 extends Component {
+  render() {
+    return <div style={style}>
+      this is Content2
+    </div>
+  }
+}
 
 class Demo extends Component {
   render() {
     return <div>
-      <h1>react-cool-tabs Demo</h1>
       <CoolTabs
         tabKey={'1'}
         style={{ width: 550, height: 500, background: 'white' }}
@@ -17,15 +37,14 @@ class Demo extends Component {
         activeLeftTabBorderBottomStyle={{ background: 'blue', height: 4 }}
         activeRightTabBorderBottomStyle={{ background: 'yellow', height: 4 }}
         tabsBorderBottomStyle={{ background: 'orange', height: 4 }}
-        leftContentStyle={{ background: 'lightgreen', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        rightContentStyle={{ background: 'lightblue', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+        leftContentStyle={{ background: 'lightgreen' }}
+        rightContentStyle={{ background: 'lightblue' }}
         leftTabTitle={'Left title'}
         rightTabTitle={'Right title'}
-        leftContent={'component 1'}
-        rightContent={'component 2'}
+        leftContent={<Content1 />}
+        rightContent={<Content2 />}
         contentTransitionStyle={'transform 0.6s ease-in'}
-        borderTransitionStyle={'all 0.6s ease-in'}
-      />
+        borderTransitionStyle={'all 0.6s ease-in'} />
     </div>
   }
 }

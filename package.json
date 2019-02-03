@@ -1,6 +1,6 @@
 {
   "name": "react-cool-tabs",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "react-cool-tabs React component",
   "main": "lib/index.js",
   "author": "Timor sulimani <timorss@gmail.com>",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "<https://github.com/timorss/react-cool-tabs.git>"
+    "url": "https://github.com/timorss/react-cool-tabs.git"
   },
   "dependencies": {},
   "peerDependencies": {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Row from './Row'
-import {_tabStyle,_contentContainerStyle,_contentStyle,_activeBorderBottomStyle,_tabsBorderBottomStyle,buttonStyle} from './styles'
+import { _tabStyle, _contentContainerStyle, _contentStyle, _activeBorderBottomStyle, _tabsBorderBottomStyle, buttonStyle } from './styles'
 
 class CoolTabs extends Component {
   constructor (props) {
@@ -9,6 +9,12 @@ class CoolTabs extends Component {
       tabKey: this.props.tabKey
     }
     this.onPressTab = this.onPressTab.bind(this)
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (this.props.tabKey !== prevProps.tabKey) {
+      this.setState({ tabKey: this.props.tabKey })
+    }
   }
 
   onPressTab(key) {
@@ -64,8 +70,8 @@ class CoolTabs extends Component {
       tabsHeaderClassName, // the tabs part default here
       activeTabStyle, // the active tab style, u can also give style to the title font
       unActiveTabStyle, // the Unactive tab style, u can also give style to the title font
-      leftTabStyle, // the left tab style, if you want different style to wach tab, activeTabStyle and unActiveTabStyle is stronger than this
-      rightTabStyle, // the right tab style, if you want different style to wach tab, activeTabStyle and unActiveTabStyle is stronger than this
+      leftTabStyle, // the left tab style only if you want different style for each tab. activeTabStyle and unActiveTabStyle is stronger than this
+      rightTabStyle, // the right tab style, if you want different style to each tab, activeTabStyle and unActiveTabStyle is stronger than this
       activeTabClassName,
       leftTabClassName,
       rightTabClassName,
@@ -76,7 +82,7 @@ class CoolTabs extends Component {
       rightTabTitleClassName,
       leftTabTitle, // left title
       rightTabTitle, // right title
-      contentContainerStyle, // contentContainerStyle, recommended just if you want to make the backgroundColor a gradient on the both tabs , else tou can use leftContentStyle, and rightContentStyle
+      contentContainerStyle, // contentContainerStyle, recommended just if you want to make the backgroundColor a gradient on the both tabs , else you can use leftContentStyle, and rightContentStyle
       leftContentStyle, // left content style
       rightContentStyle, // right content style
       leftContent, // content: component / text / img
@@ -94,13 +100,13 @@ class CoolTabs extends Component {
     return (
       <div className={className} style={{ height: 400, width: 400, ...style }}>
         <Row style={{ height: 40, position: 'relative', ...tabsHeaderStyle }} className={tabsHeaderClassName}>
-          <button style={{ ...buttonStyle, ..._tabStyle, ...leftTabStyle, ..._activeTab1 }} className={`button-clean ${tabKey === '1' ? `${activeTabClassName} ${leftTabClassName}` : unActiveClassName}`}
+          <button style={{ ...buttonStyle, ..._tabStyle, ...leftTabStyle, ..._activeTab1 }} className={`button-clean ${leftTabClassName} ${tabKey === '1' ? `${activeTabClassName}` : unActiveClassName}`}
             onClick={() => this.onPressTab('1')}>
             <div style={leftTabTitleStyle} className={leftTabTitleClassName}>
               {leftTabTitle}
             </div>
           </button>
-          <button style={{ ...buttonStyle, ..._tabStyle, ...rightTabStyle, ..._activeTab2 }} className={`button-clean ${tabKey === '2' ? `${activeTabClassName} ${rightTabClassName}` : unActiveClassName}`}
+          <button style={{ ...buttonStyle, ..._tabStyle, ...rightTabStyle, ..._activeTab2 }} className={`button-clean ${rightTabClassName} ${tabKey === '2' ? `${activeTabClassName}` : unActiveClassName}`}
             onClick={() => this.onPressTab('2')}>
             <div style={rightTabTitleStyle} className={rightTabTitleClassName}>
               {rightTabTitle}
@@ -144,8 +150,8 @@ CoolTabs.defaultProps = {
   leftContent: 'Content 1',
   rightContent: 'Content 2',
   tabKey: '1',
-  contentTransitionStyle: 'transform 1s ease',
-  borderTransitionStyle: 'all 1s ease',
+  // contentTransitionStyle: 'transform 1s ease',
+  // borderTransitionStyle: 'all 1s ease',
 };
 
 // eslint-disable-next-line no-lone-blocks
@@ -162,5 +168,5 @@ CoolTabs.defaultProps = {
   secondTabBorderClassName={'withdraw-border'}
   firstContent={<TradeForm method={'buy'} />}
   secondContent={<TradeForm method={'sell'} />}
-  transitionTypeClassName={'transition'} // has to be in a css because the transition can't be inline
+  transitionTypeClassName={'transition'}
 /> */ }

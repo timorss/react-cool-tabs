@@ -32,7 +32,6 @@ const _tabsBorderBottomStyle = {
 
 const buttonStyle = {
   border: 0,
-  background: 'transparent',
   outline: 'none',
   padding: 0
 }
