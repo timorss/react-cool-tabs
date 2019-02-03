@@ -1,10 +1,6 @@
 # react-cool-tabs
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
-
-Describe react-cool-tabs here.
+Very comftable package to use tabs.
 
 ## Installation
 
@@ -24,28 +20,28 @@ import CoolTabs from 'react-cool-tabs';
 
 export  default  class  Example  extends  React.Component {
 render() {
-	return (
-		<div>
-        <CoolTabs
-		tabKey={'1'}
-		style={{ width:  550, height:  500, background:  'white' }}
-		activeTabStyle={{ background:  'red', color:  'white' }}
-		leftTabStyle={{ background:  '#53b9ea' }}
-		rightTabStyle={{ background:  '#53b9ea' }}
-		unActiveTabStyle={{ background:  'green', color:  'black' }}
-		activeLeftTabBorderBottomStyle={{ background:  'blue', height:  4 }}
-		activeRightTabBorderBottomStyle={{ background:  'yellow', height:  4 }}
-		tabsBorderBottomStyle={{ background:  'orange', height:  4 }}
-		leftContentStyle={{ background:  'lightgreen' }}
-		rightContentStyle={{ background:  'lightblue' }}
-		leftTabTitle={'Left title'}
-		rightTabTitle={'Right title'}
-		leftContent={<Content1>}
-		rightContent={<Content2/>}
-		contentTransitionStyle={'transform 0.6s ease-in'}
-		borderTransitionStyle={'all 0.6s ease-in'}/>
-		</div>
-	);
+   return (
+     <div>
+	<CoolTabs
+	tabKey={'1'}
+	style={{ width:  550, height:  500, background:  'white' }}
+	activeTabStyle={{ background:  'red', color:  'white' }}
+	leftTabStyle={{ background:  '#53b9ea' }}
+	rightTabStyle={{ background:  '#53b9ea' }}
+	unActiveTabStyle={{ background:  'green', color:  'black' }}
+	activeLeftTabBorderBottomStyle={{ background:  'blue', height:  4 }}
+	activeRightTabBorderBottomStyle={{ background:  'yellow', height:  4 }}
+	tabsBorderBottomStyle={{ background:  'orange', height:  4 }}
+	leftContentStyle={{ background:  'lightgreen' }}
+	rightContentStyle={{ background:  'lightblue' }}
+	leftTabTitle={'Left title'}
+	rightTabTitle={'Right title'}
+	leftContent={<Content1>}
+	rightContent={<Content2/>}
+	contentTransitionStyle={'transform 0.6s ease-in'}
+	borderTransitionStyle={'all 0.6s ease-in'}/>
+     </div>
+);
 }}
 ```
 
