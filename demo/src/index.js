@@ -31,8 +31,6 @@ class Demo extends Component {
         tabKey={'1'}
         style={{ width: 550, height: 500, background: 'white' }}
         activeTabStyle={{ background: 'red', color: 'white' }}
-        leftTabStyle={{ background: '#53b9ea' }}
-        rightTabStyle={{ background: '#53b9ea' }}
         unActiveTabStyle={{ background: 'green', color: 'black' }}
         activeLeftTabBorderBottomStyle={{ background: 'blue', height: 4 }}
         activeRightTabBorderBottomStyle={{ background: 'yellow', height: 4 }}
