@@ -3,7 +3,7 @@
 Very comfortable package to use tabs.
 I looked for a tabs package that i can custom each tab and content the way i want.
 i didn't find so i made this.
-Enjoy.   :)
+Enjoy.
 
 ![](1.gif)
 ![](2.gif)
@@ -12,7 +12,8 @@ Enjoy.   :)
 ## Installation
 
 	```jsx
-  npm i react-cool-tabs --save
+	npm i react-cool-tabs --save
+	
 	```
 
 
