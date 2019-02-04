@@ -12,7 +12,7 @@ Enjoy.   :)
 ## Installation
 
 	```
-npm i react-cool-tabs --save
+  npm i react-cool-tabs --save
 	```
 
 
