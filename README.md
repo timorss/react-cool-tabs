@@ -13,6 +13,7 @@ Enjoy.   :)
 
 	```
   npm i react-cool-tabs --save
+	
 	```
 
 
