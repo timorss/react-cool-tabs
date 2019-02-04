@@ -11,9 +11,8 @@ Enjoy.   :)
 
 ## Installation
 
-	```
+	```jsx
   npm i react-cool-tabs --save
-	
 	```
 
 
