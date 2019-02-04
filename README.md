@@ -1,6 +1,9 @@
 # react-cool-tabs
 
 Very comfortable package to use tabs.
+I looked for a tabs package that i can custom each tab and content the way i want.
+i didn't find so i made this.
+Enjoy.   :)
 
 ![](1.gif)
 ![](2.gif)
@@ -8,7 +11,6 @@ Very comfortable package to use tabs.
 
 ## Installation
 
- Install react-common-admin
 	```
 npm i react-cool-tabs --save
 	```
@@ -21,6 +23,20 @@ npm i react-cool-tabs --save
 import  React  from  'react';
 import CoolTabs from 'react-cool-tabs';
 
+class Content1 extends Component {
+  render() {
+    return <div style={style}>
+      this is Content1
+    </div>
+  }
+}
+class Content2 extends Component {
+  render() {
+    return <div style={style}>
+      this is Content2
+    </div>
+  }
+}
 
 export  default  class  Example  extends  React.Component {
 render() {
@@ -50,8 +66,8 @@ render() {
 ## Props
 | key | type | Description|
 |-----|--|--|
-|tabKey|string|Set which tab will render first "1" or "2"
-|onPressTab|function|function that will call after choosing a tab
+|tabKey|string|Set which tab will render "1" or "2"
+|onPressTab|function|Function that will call after choosing a tab
 |style|object|The style of the Container. <br />the default is width: 400, height: 400|
 |tabsHeaderStyle|object|The style of the tabs part default here is height: 40|
 |activeTabStyle|object|The active tab style, u can also give style to the title font|
