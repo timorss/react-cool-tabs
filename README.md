@@ -12,7 +12,9 @@ Enjoy.
 ## Installation
 
 	```
+
 	npm i react-cool-tabs --save
+	
 	```
 
 
