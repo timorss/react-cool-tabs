@@ -2,7 +2,9 @@
 
 Very comfortable package to use tabs.
 
-![](basicGif.gif)
+![](1.gif)
+![](2.gif)
+![](3.gif)
 
 ## Installation
 
@@ -49,6 +51,7 @@ render() {
 | key | type | Description|
 |-----|--|--|
 |tabKey|string|Set which tab will render first "1" or "2"
+|onPressTab|function|function that will call after choosing a tab
 |style|object|The style of the Container. <br />the default is width: 400, height: 400|
 |tabsHeaderStyle|object|The style of the tabs part default here is height: 40|
 |activeTabStyle|object|The active tab style, u can also give style to the title font|

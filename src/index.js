@@ -18,8 +18,11 @@ class CoolTabs extends Component {
   }
 
   onPressTab(key) {
-    this.setState({ tabKey: key })
+    this.setState({ tabKey: key }, () => {
+      this.props.onTabChanged && this.props.onTabChanged(key)
+    })
   }
+
 
   renderBorderUnderTabs() {
     const {
