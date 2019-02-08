@@ -82,7 +82,7 @@ activeRightTabBorderBottomStyle|object|activeRightTabBorderBottomClassName|borde
 contentContainerStyle|object|contentContainerClassName| Recommended just if you want to make the backgroundColor a gradient on both tabs **content** , else you can use leftContentStyle, and rightContentStyle
 leftContentStyle|object|leftContentClassName|The left content style|
 rightContentStyle|object|rightContentClassName|the right content style|
-leftContent|component/text/img|The content you want to have when you on the left tab|
-rightContent|component/text/img|The content you want to have when you on the right tab|
-contentTransitionStyle|string|the speed and type of transition.<br />**example:** 'transform 0.6s ease-in' <br />**has to start with the word 'transition'!**|
-borderTransitionStyle|string|The border transition style.<br /> **example:**  'all 0.6s ease'<br />**has to start with the word 'all'!**|
+leftContent|component/text/img|-|The content you want to have when you on the left tab|
+rightContent|component/text/img|-|The content you want to have when you on the right tab|
+contentTransitionStyle|string|-|the speed and type of transition.<br />**example:** 'transform 0.6s ease-in' <br />**has to start with the word 'transition'!**|
+borderTransitionStyle|string|-|The border transition style.<br /> **example:**  'all 0.6s ease'<br />**has to start with the word 'all'!**|
