@@ -1,10 +1,10 @@
 # react-cool-tabs
 
-Very comfortable package to use tabs.
-I looked for a tabs package that i can custom each tab and content the way i want.
-for example different borderBottom on each tab.
-i didn't find so i made this.
-Enjoy.
+Very comfortable package to use tabs.<br />
+I looked for a tabs package that i can custom each tab and content the way i want.<br />
+for example different borderBottom on each tab.<br />
+i didn't find so i made this.<br />
+Enjoy.<br />
 
 ![](1.gif)
 ![](2.gif)
