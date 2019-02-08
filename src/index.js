@@ -26,9 +26,10 @@ class CoolTabs extends Component {
 
   renderBorderUnderTabs() {
     const {
-      tabsBorderBottomStyle // if you want to have a border under the tabs
+      tabsBorderBottomStyle, // if you want to have a border under the tabs
+      tabsBorderBottomClassName
     } = this.props
-    return <div style={{ ..._tabsBorderBottomStyle, ...tabsBorderBottomStyle }}></div>
+    return <div style={{ ..._tabsBorderBottomStyle, ...tabsBorderBottomStyle }} className={tabsBorderBottomClassName}></div>
   }
 
   renderActiveTabBorder() {
@@ -86,6 +87,7 @@ class CoolTabs extends Component {
       leftTabTitle, // left title
       rightTabTitle, // right title
       contentContainerStyle, // contentContainerStyle, recommended just if you want to make the backgroundColor a gradient on the both tabs , else you can use leftContentStyle, and rightContentStyle
+      contentContainerClassName,
       leftContentStyle, // left content style
       rightContentStyle, // right content style
       leftContent, // content: component / text / img
@@ -103,13 +105,13 @@ class CoolTabs extends Component {
     return (
       <div className={className} style={{ height: 400, width: 400, ...style }}>
         <Row style={{ height: 40, position: 'relative', ...tabsHeaderStyle }} className={tabsHeaderClassName}>
-          <button style={{ ...buttonStyle, ..._tabStyle, ...leftTabStyle, ..._activeTab1 }} className={`button-clean ${leftTabClassName} ${tabKey === '1' ? `${activeTabClassName}` : unActiveClassName}`}
+          <button style={{ ...buttonStyle, ..._tabStyle, ...leftTabStyle, ..._activeTab1 }} className={`${leftTabClassName} ${tabKey === '1' ? `${activeTabClassName}` : unActiveClassName}`}
             onClick={() => this.onPressTab('1')}>
             <div style={leftTabTitleStyle} className={leftTabTitleClassName}>
               {leftTabTitle}
             </div>
           </button>
-          <button style={{ ...buttonStyle, ..._tabStyle, ...rightTabStyle, ..._activeTab2 }} className={`button-clean ${rightTabClassName} ${tabKey === '2' ? `${activeTabClassName}` : unActiveClassName}`}
+          <button style={{ ...buttonStyle, ..._tabStyle, ...rightTabStyle, ..._activeTab2 }} className={`${rightTabClassName} ${tabKey === '2' ? `${activeTabClassName}` : unActiveClassName}`}
             onClick={() => this.onPressTab('2')}>
             <div style={rightTabTitleStyle} className={rightTabTitleClassName}>
               {rightTabTitle}
@@ -118,7 +120,7 @@ class CoolTabs extends Component {
           {this.renderBorderUnderTabs()}
           {this.renderActiveTabBorder()}
         </Row>
-        <div style={{ ..._contentContainerStyle, ...contentContainerStyle }} className='contentContainer'>
+        <div style={{ ..._contentContainerStyle, ...contentContainerStyle }} className={contentContainerClassName}>
           <div style={{
             ..._contentStyle,
             ..._transformContent1,
