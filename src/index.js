@@ -128,9 +128,7 @@ class CoolTabs extends Component {
             transition: contentTransitionStyle
           }} className={`${leftContentClassName}`}>
             {/* first content */}
-            <div>
-              {leftContent}
-            </div>
+            {leftContent}
           </div>
           <div style={{
             ..._contentStyle,
