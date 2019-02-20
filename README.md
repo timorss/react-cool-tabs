@@ -7,7 +7,7 @@ i didn't find so i made this.<br />
 Enjoy.<br />
 
 ![](1.gif)
-<img src="./2.gif" width="150" height="300" />
+<img src="./2.gif" width="400" height="400" />
 ![](3.gif)
 
 ## Installation
